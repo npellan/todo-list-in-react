@@ -1,0 +1,22 @@
+@use 'src/styles/vars';
+
+.task-input {
+  width: 600px;
+  height: 80px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: vars.$color;
+  border: vars.$color-dark 1px solid;
+  box-shadow: inset 0px 0px 25px 25px rgba(0,0,0,.1);
+  color: #fff;
+
+  &::focus {
+    box-shadow: inset 0px 0px 25px 25px rgba(0,0,0,.5);
+  }
+  
+  &::placeholder {
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
